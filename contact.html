@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>Adrian's Contact</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <header class="main-head">
       <nav class="navbar">
         <h1 class="logo"><a href="index.html">ϟ⛈</a></h1>
         <ul class="nav-list">
@@ -15,20 +16,30 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+    </header>
+
     <main>
       <h1 class="page-title">Adrian's Contact</h1>
       Hello World! This is my contact.
       <form action="" class="contact-form">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="name" required>
+        <input type="text" id="name" name="name" placeholder="name" required />
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="email" required>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email"
+          required
+        />
         <label for="message">Message</label>
         <textarea name="message" id="message" placeholder="message" required>
         </textarea>
-        <input type="Submit" value="submit"> 
+        <input type="Submit" value="submit" />
       </form>
     </main>
-    <footer class="footer">© 2023 Adrian's Contact | All Rights Reserved</footer>
+    <footer class="footer">
+      © 2023 Adrian's Contact | All Rights Reserved
+    </footer>
   </body>
 </html>
