@@ -110,12 +110,11 @@ p {
 }
 
 .about {
-  margin: 3rem;
+  margin: 2rem;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 3rem;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .about-text {
@@ -134,8 +133,10 @@ p {
   width: 50%;
   height: auto;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
   object-fit: cover;
+  min-width: 400px;
 }
 
 .footer {
@@ -171,10 +172,12 @@ p {
 h3 {
   font-size: 2rem;
   color: white;
+  text-shadow: 2px 2px 2px var(--NightBlue);
 }
 .resume-main h2 {
   font-size: 5rem;
   color: var(--SandTanShadow);
+  text-decoration: underline;
 }
 .section {
   max-width: 50%;
@@ -189,6 +192,7 @@ h3 {
 .section:hover {
   background-color: var(--Sandtan);
 }
+
 /* form */
 
 .contact {
@@ -238,29 +242,73 @@ textarea {
 
 .page-title {
   text-align: center;
-  padding: 4rem;
+  padding: 2rem;
 }
 .contact-form {
   padding: 3rem;
   text-align: center;
 }
+@media screen and (max-width: 915px) {
+  nav {
+    text-align: center;
+  }
+}
 
 @media screen and (max-width: 700px) {
   html {
-    font-size: 60%;
+    font-size: 70%; /* Only slightly reduce the base font size */
   }
+
   nav {
     text-align: center;
   }
 
   .logo {
-    padding: 3rem;
+    padding: 2rem; /* Adjust padding for better spacing */
   }
+
   .about-img {
-    height: 60%;
+    height: 70%; /* Maintain the height of the image */
   }
+
+  /* Scale text sizes more gently */
   .form-wrapper input,
   textarea {
-    font-size: 80%;
+    font-size: 1.5rem; /* Keep a readable font size */
+  }
+
+  .resume h2,
+  h3,
+  p {
+    font-size: 1.8rem; /* Limit text shrinkage */
+  }
+
+  .resume h1 {
+    font-size: 2.5rem; /* Maintain a larger heading */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 65%; /* Reduce the base font size slightly more for smaller screens */
+  }
+
+  .abt-image {
+    width: 40vw;
+  }
+
+  .form-wrapper input,
+  textarea {
+    font-size: 1.6rem; /* Ensure form inputs stay readable */
+  }
+
+  .resume h1 {
+    font-size: 3rem; /* Ensure headings stay visible */
+  }
+
+  .resume h2,
+  h3,
+  p {
+    font-size: 2rem; /* Prevent text from getting too small */
   }
 }
