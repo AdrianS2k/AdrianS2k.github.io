@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Courier Prime", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+  color: white;
+}
+.abt-image {
+  width: 30%;
+}
+
+.main-head {
+  background: rgb(1, 25, 87, 1);
+  position: sticky;
+  top: 0px;
+}
+
+.navbar {
+  display: flex;
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar h1 {
+  flex: 1 1 40rem;
+  font-family: "Pattaya", sans-serif;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: font-size 1s;
+}
+
+.navbar a:hover {
+  font-size: 130%;
+  color: rgba(255, 215, 0);
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.index-page {
+  min-height: 95vh;
+  text-shadow: 1px 1px 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(sunset.jpg);
+  background-size: cover;
+  background-position: center;
+}
