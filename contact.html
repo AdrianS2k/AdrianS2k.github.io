@@ -18,25 +18,36 @@
       </nav>
     </header>
 
-    <main>
-      <h1 class="page-title">Adrian's Contact</h1>
-      Hello World! This is my contact.
-      <form action="" class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="name" required />
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="email"
-          required
-        />
-        <label for="message">Message</label>
-        <textarea name="message" id="message" placeholder="message" required>
-        </textarea>
-        <input type="Submit" value="submit" />
-      </form>
+    <main class="contact">
+      <h1 class="page-title">Contact me!</h1>
+      <div class="form-wrapper">
+        <form action="" class="contact-form">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="First Name, Last Name"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@email.com"
+            required
+          />
+          <label for="message">Leave a message!</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Ex. I want to schedule a meeting with you"
+            required
+          ></textarea>
+          <input class="submit-button" type="Submit" value="Submit" />
+        </form>
+      </div>
     </main>
     <footer class="footer">
       © 2023 Adrian's Contact | All Rights Reserved
