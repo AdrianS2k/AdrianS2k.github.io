@@ -222,10 +222,16 @@ textarea {
   width: 65%;
   margin: 1.5rem auto;
   font-size: 1.8rem;
+  border-radius: 10px;
+  border: 0.5rem solid white;
+  background-color: var(--SandTanShadow);
+  outline: none;
+  transition: border-color 1s;
 }
 
+
 ::placeholder {
-  color: var(--NightBlueShadow);
+  color: white;
 }
 .form-wrapper input[type="submit"] {
   border-radius: 10px;
@@ -233,11 +239,22 @@ textarea {
   color: var(--Sandtan);
   width: 30%;
   cursor: pointer;
-  transition: background-color 1s;
+  transition: background-color 1s, border-color 1s;
 }
 
 .form-wrapper input[type="submit"]:hover {
   background-color: var(--NightBlueShadow);
+  border-color: var(--NightBlue);
+}
+.form-wrapper input[type="text"]:hover {
+  border-color: var(--NightBlue);
+}
+.form-wrapper input[type="email"]:hover {
+  border-color: var(--NightBlue);
+}
+
+.form-wrapper textarea:hover {
+  border-color: var(--NightBlue);
 }
 
 .page-title {
