@@ -44,11 +44,12 @@ p {
   position: sticky;
   top: 0px;
   z-index: 1000;
+  border-bottom: 0.5rem solid var(--SandTanShadow);
 }
 
 .navbar {
   display: flex;
-  padding: 1rem;
+  padding: 2rem;
   width: 90%;
   margin: auto;
   flex-wrap: wrap;
@@ -76,7 +77,7 @@ p {
   text-decoration: none;
   border: 0.5rem solid transparent;
   border-radius: 10px;
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: var(--SandTanShadow);
 
   transition: font-size 1s, background-color 1s, border 1s;
@@ -259,6 +260,7 @@ textarea {
 .page-title {
   text-align: center;
   padding: 2rem;
+  color: white;
 }
 .contact-form {
   padding: 3rem;
@@ -266,7 +268,7 @@ textarea {
 }
 
 .portfolio-head {
-  min-height: 10vh;
+  min-height: 5vh;
   background-color: var(--Sandtan);
   padding: 3rem;
   display: flex;
@@ -281,7 +283,7 @@ textarea {
   width: 91%;
   margin: auto;
   display: flex;
-  min-height: 60vh;
+  min-height: 70vh;
   align-items: center;
   flex-wrap: wrap;
   padding: 10rem;
@@ -291,16 +293,34 @@ textarea {
 .project {
   text-align: center;
   flex: 1 1 25rem;
-  min-height: 50rem;
+  min-height: 60rem;
   margin: 3rem 5rem;
-  background-color: white;
   align-items: center;
   border-radius: 50px;
+  border: 1rem solid var(--SandTanShadow);
+  background-color: rgb(200, 150, 102, 0.3);
+  backdrop-filter: blur(20px);
+  transition: transform 1s;
+}
+
+.project:hover {
+  transform: scale(1.10);
 }
 
 .project img {
-  max-width: 30%;
+  max-width: 80%;
   margin: 2rem;
+}
+
+.project h4 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px 2px var(--SandTanShadow);
+}
+
+.project p {
+  font-size: 2rem;
+  color: var(--NightBlue);
 }
 
 @media screen and (max-width: 915px) {
