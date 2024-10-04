@@ -129,6 +129,9 @@ p {
   margin: auto;
   padding: 2rem;
 }
+.about-text:hover {
+  transform: scale(1.15);
+}
 
 .abt-image {
   width: 50%;
@@ -138,6 +141,9 @@ p {
   margin-bottom: 10rem;
   object-fit: cover;
   min-width: 400px;
+}
+.about-image:hover {
+  transform: scale(1.15);
 }
 
 .footer {
@@ -304,7 +310,7 @@ textarea {
 }
 
 .project:hover {
-  transform: scale(1.10);
+  transform: scale(1.1);
 }
 
 .project img {
