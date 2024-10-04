@@ -269,7 +269,7 @@ textarea {
 
 .portfolio-head {
   min-height: 5vh;
-  background-color: var(--Sandtan);
+  background-color: var(--NightBlueShadow);
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -308,7 +308,7 @@ textarea {
 }
 
 .project img {
-  max-width: 80%;
+  max-width: 90%;
   margin: 2rem;
 }
 
@@ -317,10 +317,14 @@ textarea {
   color: white;
   text-shadow: 2px 2px 2px var(--SandTanShadow);
 }
+.project h1 {
+  text-shadow: 2px 2px 2px var(--SandTanShadow);
+}
 
 .project p {
-  font-size: 2rem;
-  color: var(--NightBlue);
+  font-size: 2.5rem;
+  color: var(--Sandtan);
+  text-shadow: 1px 1px 1px var(--NightBlueShadow);
 }
 
 @media screen and (max-width: 915px) {
