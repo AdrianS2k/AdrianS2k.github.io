@@ -229,7 +229,6 @@ textarea {
   transition: border-color 1s;
 }
 
-
 ::placeholder {
   color: white;
 }
@@ -265,6 +264,45 @@ textarea {
   padding: 3rem;
   text-align: center;
 }
+
+.portfolio-head {
+  min-height: 10vh;
+  background-color: var(--Sandtan);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  text-align: center;
+}
+
+.projects {
+  width: 91%;
+  margin: auto;
+  display: flex;
+  min-height: 62vh;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10rem;
+  background-color: var(--NightBlue);
+}
+
+.project {
+  text-align: center;
+  flex: 1 1 25rem;
+  min-height: 50rem;
+  margin: 3rem 5rem;
+  background-color: white;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.project img {
+  max-width: 30%;
+  margin: 2rem;
+}
+
 @media screen and (max-width: 915px) {
   nav {
     text-align: center;
