@@ -281,7 +281,7 @@ textarea {
   width: 91%;
   margin: auto;
   display: flex;
-  min-height: 62vh;
+  min-height: 60vh;
   align-items: center;
   flex-wrap: wrap;
   padding: 10rem;
